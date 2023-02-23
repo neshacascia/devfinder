@@ -23,10 +23,12 @@ module.exports = {
       },
       width: {
         avatar: '70px',
+        tabletAvatar: '117px',
         input: '80%',
       },
       height: {
         avatar: '70px',
+        tabletAvatar: '117px',
       },
       boxShadow: {
         box: '0px 16px 30px -10px rgba(70, 96, 187, 0.198567);',

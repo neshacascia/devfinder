@@ -45,10 +45,12 @@ async function fetchUserData(user) {
 function displayUserInfo(data) {
   document.getElementById('info').innerHTML = `
     <div class="flex items-center gap-5 mb-8">
-      <img src=${data.avatar_url} class="w-avatar h-avatar rounded-full" />
+      <img src=${
+        data.avatar_url
+      } class="w-avatar h-avatar rounded-full sm:w-tabletAvatar sm:h-tabletAvatar" />
 
       <div class="flex flex-col gap-1.5">
-        <h2 class="text-gray dark:text-white font-bold">${
+        <h2 class="text-gray dark:text-white font-bold sm:text-2xl">${
           data.name === null ? data.login.slice(1) : data.name
         }</h2>
         <span class="text-blue font-sm">@${data.login}</span>
@@ -64,22 +66,22 @@ function displayUserInfo(data) {
       ${data.bio === null ? 'This profile has no bio' : data.bio}
     </p>
 
-    <div class="bg-lightBg dark:bg-darkBg flex justify-evenly rounded-xl p-4 mb-6">
-      <div class="flex flex-col items-center gap-2">
+    <div class="bg-lightBg dark:bg-darkBg flex justify-evenly rounded-xl p-4 mb-6 sm:justify-start sm:gap-14 sm:pl-8">
+      <div class="flex flex-col items-center gap-2 sm:items-start">
         <span class="text-blueGray dark:text-white text-sm">Repos</span>
         <span class="text-gray dark:text-white text-lg font-bold">${
           data.public_repos
         }</span>
       </div>
 
-      <div class="flex flex-col items-center gap-2">
+      <div class="flex flex-col items-center gap-2 sm:items-start">
         <span class="text-blueGray dark:text-white text-sm">Followers</span>
         <span class="text-gray dark:text-white text-lg font-bold">${
           data.followers
         }</span>
       </div>
 
-      <div class="flex flex-col items-center gap-2">
+      <div class="flex flex-col items-center gap-2 sm:items-start">
         <span class="text-blueGray dark:text-white text-sm">Following</span>
         <span class="text-gray dark:text-white text-lg font-bold">${
           data.following
@@ -87,7 +89,7 @@ function displayUserInfo(data) {
       </div>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-x-16 sm:items-start">
       <div class=${
         data.location === null ? 'text-idle' : 'text-blueGray'
       } flex items-center gap-5">
@@ -99,7 +101,7 @@ function displayUserInfo(data) {
 
       <div class="${
         data.blog === null ? 'text-idle' : 'text-blueGray'
-      } flex items-center gap-3">
+      } flex items-center gap-3 sm:gap-2">
         <i class="dark:text-white text-lg fa-solid fa-link"></i>
         <a href=${
           data.blog === null ? '#' : `https://${data.blog}`
@@ -110,7 +112,7 @@ function displayUserInfo(data) {
 
       <div class="${
         data.twitter_username === null ? 'text-idle' : 'text-blueGray'
-      } flex items-center gap-4">
+      } flex items-center gap-4 sm:gap-2">
         <i class="dark:text-white text-lg fa-brands fa-twitter"></i>
         <a href=${
           data.twitter_username === null
@@ -123,7 +125,7 @@ function displayUserInfo(data) {
 
       <div class="${
         data.company === null ? 'text-idle' : 'text-blueGray'
-      } flex items-center gap-5">
+      } flex items-center gap-5 sm:gap-4">
         <i class="dark:text-white text-lg fa-solid fa-building"></i>
         <a href=${
           data.company === null
