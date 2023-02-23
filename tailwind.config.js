@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['/**/*.{html,js}'],
+  content: ['**/*.{html,js}'],
   theme: {
     extend: {
       colors: {
@@ -10,6 +10,7 @@ module.exports = {
         blueGray: '#4B6A9B',
         blue: '#0079FF',
         box: 'FEFEFE',
+        darkBox: '#1E2A47',
         gray: '#2B3442',
         body: '#697C9A',
         idle: 'rgb(167, 179, 202)',
@@ -29,4 +30,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 };

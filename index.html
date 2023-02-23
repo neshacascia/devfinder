@@ -3,11 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="/dist/output.css" rel="stylesheet" />
     <script type="module" src="main.js" defer></script>
     <title>devfinder</title>
   </head>
 
-  <body></body>
+  <body class="bg-lightBg dark:bg-darkBg font-display h-screen">
+    <main class="w-full h-full flex flex-col justify-center items-center px-6">
+      <div class="w-full flex justify-between pb-9">
+        <h1 class="text-darkText dark:text-white text-2xl font-bold">
+          devfinder
+        </h1>
+        <button
+          class="text-blueGray text-xs flex items-center gap-4"
+          id="toggleTheme"
+        ></button>
+      </div>
+
+      <form
+        class="bg-white dark:bg-darkBox w-full flex items-center rounded-2xl shadow-box p-4 mb-4"
+      >
+        <i class="text-blue text-2xl mr-2 fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search GitHub username..."
+          class="text-blueGray dark:text-white dark:bg-darkBox text-sm w-full mr-auto"
+          id="input"
+        />
+        <button
+          type="submit"
+          class="text-white bg-blue font-bold rounded-xl py-3.5 px-4"
+          id="search"
+        >
+          Search
+        </button>
+      </form>
+
+      <section
+        class="bg-white dark:bg-darkBox w-full rounded-2xl shadow-box px-6 py-8"
+      >
+        <div id="info" class="dark:text-white"></div>
+      </section>
+    </main>
+  </body>
 </html>
