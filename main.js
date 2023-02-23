@@ -49,9 +49,9 @@ function displayUserInfo(data) {
           data.name === null ? data.login.slice(1) : data.name
         }</h2>
         <span class="text-blue font-sm">@${data.login}</span>
-        <p class="text-body dark:text-white font-sm">Joined ${
+        <p class="text-body dark:text-white font-sm">Joined ${new Date(
           data.created_at
-        }</p>
+        ).toDateString()}</p>
       </div>
     </div>
 
