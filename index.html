@@ -34,9 +34,15 @@
         <input
           type="text"
           placeholder="Search GitHub username..."
-          class="text-blueGray dark:text-white dark:bg-darkBox text-sm w-full mr-auto"
+          class="text-blueGray dark:text-white dark:bg-darkBox text-sm w-input mr-auto"
           id="input"
         />
+        <p
+          id="error"
+          class="hidden text-red-600 text-xs text-center font-bold pr-4"
+        >
+          No results
+        </p>
         <button
           type="submit"
           class="text-white bg-blue hover:bg-btnHover font-bold rounded-xl py-3.5 px-4"

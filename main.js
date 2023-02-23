@@ -31,8 +31,11 @@ async function fetchUserData(user) {
   try {
     const res = await fetch(`https://api.github.com/users/${user}`);
     if (res.ok) {
+      document.querySelector('#error').classList.add('hidden');
       const data = await res.json();
       displayUserInfo(data);
+    } else {
+      document.querySelector('#error').classList.remove('hidden');
     }
   } catch (err) {
     console.error(err);

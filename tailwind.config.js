@@ -23,6 +23,7 @@ module.exports = {
       },
       width: {
         avatar: '70px',
+        input: '80%',
       },
       height: {
         avatar: '70px',
