@@ -1,6 +1,20 @@
 const toggleThemeBtn = document.querySelector('#toggleTheme');
 const searchBtn = document.querySelector('#search');
 
+if (!document.documentElement.classList.contains('dark')) {
+  toggleThemeBtn.innerHTML += `DARK <i class="text-lg fa-solid fa-moon"></i>`;
+}
+
+toggleThemeBtn.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+
+  if (document.documentElement.classList.contains('dark')) {
+    toggleThemeBtn.innerHTML = `LIGHT <i class="text-lg fa-solid fa-sun"></i>`;
+  } else {
+    toggleThemeBtn.innerHTML = `DARK <i class="text-lg fa-solid fa-moon"></i>`;
+  }
+});
+
 window.onload = () => {
   fetchUserData('octocat');
 };
