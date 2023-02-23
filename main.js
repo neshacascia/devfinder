@@ -69,7 +69,7 @@ function displayUserInfo(data) {
           ${data.bio === null ? 'This profile has no bio' : data.bio}
         </p>
 
-        <div class="bg-lightBg dark:bg-darkBg flex justify-evenly rounded-xl p-4 mb-6 sm:justify-start sm:gap-14 sm:pl-8 md md:gap-20 lg:gap-32">
+        <div class="bg-lightBg dark:bg-darkBg flex justify-evenly rounded-xl p-4 mb-6 sm:justify-start sm:gap-14 sm:pl-8">
           <div class="flex flex-col items-center gap-2 sm:items-start">
             <span class="text-blueGray dark:text-white text-sm">Repos</span>
             <span class="text-gray dark:text-white text-lg font-bold">${

@@ -26,6 +26,7 @@ module.exports = {
         tabletAvatar: '117px',
         input: '80%',
         desktop: '480px',
+        container: '730px',
       },
       height: {
         avatar: '70px',
