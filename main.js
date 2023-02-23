@@ -100,7 +100,7 @@ function displayUserInfo(data) {
         <i class="dark:text-white text-lg fa-solid fa-link"></i>
         <a href=${
           data.blog === null ? '#' : `https://${data.blog}`
-        } class="dark:text-white text-sm">${
+        } class="dark:text-white text-sm hover:underline">${
     data.blog === null ? 'Not Available' : data.blog
   }</a>
       </div>
