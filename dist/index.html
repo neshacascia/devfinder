@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    
+    <title>devfinder</title>
+    <script type="module" crossorigin src="/assets/index-f29c6ef4.js"></script>
+    <link rel="stylesheet" href="/assets/index-48a0f159.css">
+  </head>
+
+  <body
+    class="bg-lightBg dark:bg-darkBg font-display h-screen md:flex md:justify-center"
+  >
+    <main
+      class="w-full h-full flex flex-col justify-center items-center px-6 sm:px-24 md:px-30 xl:px-64"
+    >
+      <div class="w-full flex justify-between pb-9">
+        <h1 class="text-darkText dark:text-white text-2xl font-bold">
+          devfinder
+        </h1>
+        <button
+          class="text-blueGray hover:text-hover dark:text-white dark:hover:text-darkHover text-xs flex items-center gap-4"
+          id="toggleTheme"
+        ></button>
+      </div>
+
+      <form
+        class="bg-white dark:bg-darkBox w-full flex items-center rounded-2xl shadow-box p-4 mb-4 sm:px-8"
+      >
+        <i class="text-blue text-2xl mr-2 fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search GitHub username..."
+          class="text-blueGray dark:text-white dark:bg-darkBox text-sm w-input mr-auto sm:text-base"
+          id="input"
+        />
+        <p
+          id="error"
+          class="hidden text-red-600 text-xs text-center font-bold pr-4"
+        >
+          No results
+        </p>
+        <button
+          type="submit"
+          class="text-white bg-blue hover:bg-btnHover font-bold rounded-xl py-3.5 px-4 lg:px-6"
+          id="search"
+        >
+          Search
+        </button>
+      </form>
+
+      <section
+        class="bg-white dark:bg-darkBox w-full rounded-2xl shadow-box px-6 py-8 sm:px-10"
+      >
+        <div id="info" class="dark:text-white"></div>
+      </section>
+    </main>
+  </body>
+</html>

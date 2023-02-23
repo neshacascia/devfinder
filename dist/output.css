@@ -608,6 +608,10 @@ video {
   position: relative;
 }
 
+.\!relative{
+  position: relative !important;
+}
+
 .sticky{
   position: sticky;
 }
@@ -2392,6 +2396,14 @@ video {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\]{
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+.\[vite\:css\]{
+  vite: css;
+}
+
+.\[vite\:html\]{
+  vite: html;
 }
 
 @media (min-width: 640px){
