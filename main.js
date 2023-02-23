@@ -47,7 +47,7 @@ function displayUserInfo(data) {
     <div class="flex items-center gap-5 mb-8">
       <img src=${
         data.avatar_url
-      } class="w-avatar h-avatar rounded-full sm:w-tabletAvatar sm:h-tabletAvatar" />
+      } class="w-avatar h-avatar rounded-full sm:w-tabletAvatar sm:h-tabletAvatar" alt="GitHub user's avatar"/>
 
       <div class="flex flex-col gap-1.5 md:w-full md:flex-row xl:pb-10">
         <div class="mr-auto">
@@ -134,8 +134,8 @@ function displayUserInfo(data) {
               data.company === null
                 ? '#'
                 : data.company.includes('@')
-                ? `https:/github.com/${data.company.slice(1)}`
-                : `https:/github.com/${data.company}`
+                ? `https://github.com/${data.company.slice(1)}`
+                : `https://github.com/${data.company}`
             }
             class="dark:text-white text-sm">${
               data.company === null ? 'Not Available' : data.company
