@@ -15,9 +15,11 @@
     <title>devfinder</title>
   </head>
 
-  <body class="bg-lightBg dark:bg-darkBg font-display h-screen">
+  <body
+    class="bg-lightBg dark:bg-darkBg font-display h-screen md:flex md:justify-center"
+  >
     <main
-      class="w-full h-full flex flex-col justify-center items-center px-6 sm:px-24"
+      class="w-full h-full flex flex-col justify-center items-center px-6 sm:px-24 md:px-30 xl:px-64"
     >
       <div class="w-full flex justify-between pb-9">
         <h1 class="text-darkText dark:text-white text-2xl font-bold">
@@ -30,7 +32,7 @@
       </div>
 
       <form
-        class="bg-white dark:bg-darkBox w-full flex items-center rounded-2xl shadow-box p-4 mb-4 sm:px-8 sm:py-6"
+        class="bg-white dark:bg-darkBox w-full flex items-center rounded-2xl shadow-box p-4 mb-4 sm:px-8"
       >
         <i class="text-blue text-2xl mr-2 fa-solid fa-magnifying-glass"></i>
         <input
@@ -47,7 +49,7 @@
         </p>
         <button
           type="submit"
-          class="text-white bg-blue hover:bg-btnHover font-bold rounded-xl py-3.5 px-4"
+          class="text-white bg-blue hover:bg-btnHover font-bold rounded-xl py-3.5 px-4 lg:px-6"
           id="search"
         >
           Search
