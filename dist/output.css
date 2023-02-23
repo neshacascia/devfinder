@@ -2581,6 +2581,10 @@ video {
   .md\:justify-center{
     justify-content: center;
   }
+
+  .md\:gap-20{
+    gap: 5rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2590,6 +2594,10 @@ video {
 
   .lg\:justify-start{
     justify-content: flex-start;
+  }
+
+  .lg\:gap-32{
+    gap: 8rem;
   }
 
   .lg\:px-6{
