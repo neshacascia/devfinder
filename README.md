@@ -7,9 +7,9 @@ This app uses the GitHub users API to search for users by their username and dis
 <img src="devfinder-screenshot.png" alt="" border="0">
 
 ## Built with
-- HTML
-- TailwindCSS
 - JavaScript
+- TailwindCSS
+- HTML
 - Vite
 
 ## Features
